@@ -1,5 +1,8 @@
 package com.dcisero.company.traventure.company.test.util;
 
+import java.sql.Timestamp;
+
+
 public class UserReport {
 
     private String FirstName;
@@ -10,22 +13,11 @@ public class UserReport {
     private String State;
     private int Zip;
     private String Country;
-    private int Date;
+    private Timestamp Date;
 
-    public UserReport() {
-        FirstName = "";
-        LastName = "";
-        Address1 = "";
-        Address2 = "";
-        City = "";
-        State = "";
-        Zip = 0;
-        Country = "";
-        Date = 0;
-    }
 
     public UserReport(String firstName, String lastName, String address1, String address2, String city,
-                      String state, int zip, String country, int date) {
+                      String state, int zip, String country, Timestamp date) {
         FirstName = firstName;
         LastName = lastName;
         Address1 = address1;
@@ -36,7 +28,6 @@ public class UserReport {
         Country = country;
         Date = date;
     }
-
 
 
     public String getFirstName() {
@@ -120,13 +111,16 @@ public class UserReport {
     }
 
 
-    public int getDate() {
+    public Timestamp getDate() {
+
         return Date;
     }
 
-    public void setDate(int date) {
+    public void setDate(Timestamp date) {
+
         Date = date;
     }
+
 
 
 }
