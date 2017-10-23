@@ -1,7 +1,9 @@
 package model;
 
 public class DBCredentials {
-    public static final String DB_ADDRESS = "jdbc:mysql://localhost:3306/helloworld";
-    public static final String USERNAME = "grant";
-    public static final String PASSWORD = "GrandCircus";
+    public static final String DB_ADDRESS = "jdbc:mysql://awshellodcisero.cc34btzdpbea.us-east-2.rds.amazonaws.com/helloworld";
+    public static final String USERNAME = "awshello";
+    public static final String PASSWORD = "Sunshine17!";
 }
+
+
